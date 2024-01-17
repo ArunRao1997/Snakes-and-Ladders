@@ -1,12 +1,13 @@
 package main;
 
+import java.security.SecureRandom;
 import java.util.Random;
 import java.util.Scanner;
 
 public class SnakeLadders{
 	public static int [][] board;
 	public static int  random() {
-		Random rand = new Random(); 
+		Random rand = new SecureRandom(); 
 		int value1 = rand.nextInt(5);
 		return value1; 
 	}
